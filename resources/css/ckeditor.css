@@ -1,0 +1,42 @@
+@layer components {
+    .ckeditor ul {
+        @apply list-disc list-inside;
+    }
+
+    .ckeditor ol {
+        @apply list-decimal list-inside;
+    }
+
+    .ckeditor a {
+        @apply text-blue-600 visited:text-purple-600 underline;
+    }
+
+    .ckeditor h2 {
+        @apply text-2xl font-semibold;
+    }
+
+    .ckeditor h3 {
+        @apply text-xl font-semibold;
+    }
+
+    .ckeditor h4 {
+        @apply text-lg font-semibold;
+    }
+
+    .ckeditor strong {
+        @apply font-bold;
+    }
+
+    .ckeditor ul:not(:last-child),
+    .ckeditor ol:not(:last-child),
+    .ckeditor p:not(:last-child),
+    .ckeditor h2:not(:last-child),
+    .ckeditor pre {
+        @apply mb-4;
+    }
+
+    .ckeditor h3:not(:last-child),
+    .ckeditor h4:not(:last-child) {
+        @apply mb-3;
+    }
+}
